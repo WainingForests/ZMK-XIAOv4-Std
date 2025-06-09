@@ -85,7 +85,7 @@
         };
 
         colon {
-            bindings = <&kp LS(SEMICOLON)>;
+            bindings = <&kp LS(P)>;
             key-positions = <30 33>;
             timeout-ms = <20>;
         };
