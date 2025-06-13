@@ -150,8 +150,8 @@
             timeout-ms = <20>;
         };
 
-        capsLock {
-            bindings = <&kp CAPSLOCK>;
+        warpd {
+            bindings = <&kp LG(LA(Z))>;
             key-positions = <24 25>;
             timeout-ms = <20>;
         };
