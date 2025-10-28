@@ -9,6 +9,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -85,13 +86,13 @@
         };
 
         tableft {
-            bindings = <&kp LC(LS(TAB))>;
+            bindings = <&kp LC(PAGE_UP)>;
             key-positions = <11 12>;
             timeout-ms = <20>;
         };
 
         tabright {
-            bindings = <&kp LC(TAB)>;
+            bindings = <&kp LC(PAGE_DOWN)>;
             key-positions = <17 18>;
             timeout-ms = <20>;
         };
@@ -165,19 +166,19 @@
 
         layer_1 {
             bindings = <
-&none  &none  &kp LC(LS(PAGE_UP))  &kp LC(LS(PAGE_DOWN))  &none     &kp HOME        &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &kp END          &none
-&none  &none  &kp LC(PAGE_UP)      &kp LC(PAGE_DOWN)      &none     &kp LEFT        &kp DOWN            &kp UP_ARROW   &kp RIGHT        &msc SCRL_UP
-&none  &none  &none                &kp LCTRL              &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN      &mmv MOVE_UP   &mmv MOVE_RIGHT  &msc SCRL_DOWN
-                                   &trans                 &trans    &mkp RCLK       &mkp LCLK
+&none  &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none                   &kp HOME        &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &kp END          &none
+&none  &none  &kp LEFT_ALT          &kp LEFT_SHIFT        &none                   &kp LEFT        &kp DOWN            &kp UP_ARROW   &kp RIGHT        &msc SCRL_UP
+&none  &none  &none                 &kp LCTRL             &kp LS(LEFT_CONTROL)    &mmv MOVE_LEFT  &mmv MOVE_DOWN      &mmv MOVE_UP   &mmv MOVE_RIGHT  &msc SCRL_DOWN
+                                    &trans                &trans                  &mkp RCLK       &mkp LCLK
             >;
         };
 
         layer_2 {
             bindings = <
-&kp C_PREV        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_VOLUME_UP      &none   &none            &none         &none  &none
-&kp C_NEXT        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0         &none   &kp RIGHT_SHIFT  &kp LEFT_ALT  &none  &none
-&kp C_PLAY_PAUSE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp C_VOLUME_DOWN    &none   &kp LCTRL        &none         &none  &none
-                                              &none         &kp C_MUTE           &trans  &trans
+&kp C_PREV        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_VOLUME_UP      &none                 &none            &none         &none  &none
+&kp C_NEXT        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0         &none                 &kp RIGHT_SHIFT  &kp LEFT_ALT  &none  &none
+&kp C_PLAY_PAUSE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp C_VOLUME_DOWN    &kp LS(LEFT_CONTROL)  &kp LCTRL        &none         &none  &none
+                                              &none         &kp C_MUTE           &trans                &trans
             >;
         };
 
