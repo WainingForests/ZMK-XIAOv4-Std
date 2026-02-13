@@ -51,7 +51,7 @@
         RtoTabRight: RtoTabRight {
             compatible = "zmk,behavior-mod-morph";
             label = "RTOTABRIGHT";
-            bindings = <&kp P>, <&kp LC(PAGE_DOWN)>;
+            bindings = <&kp R>, <&kp LC(PAGE_DOWN)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -62,14 +62,8 @@
         compatible = "zmk,combos";
 
         warpd {
-            bindings = <&kp LG(LA(Z))>;
+            bindings = <&kp LG(LC(LS(Z)))>;
             key-positions = <30 33>;
-            timeout-ms = <40>;
-        };
-
-        caps {
-            bindings = <&kp CAPS>;
-            key-positions = <31 32>;
             timeout-ms = <40>;
         };
     };
