@@ -73,7 +73,7 @@
 
         default_layer {
             bindings = <
-&lt 5 Q                     &WtoTabLeft  &kp F            &PtoTabRight      &kp B                  &kp J                   &kp L              &kp U                &kp Y    &lt 5 SEMICOLON
+&lt 5 Q                     &WtoTabLeft  &kp F            &PtoTabRight      &kp G                  &kp J                   &kp L              &kp U                &kp Y    &lt 5 SEMICOLON
 &lt 3 A                     &kp R        &hm LEFT_ALT S   &hm LEFT_SHIFT T  &kp D                  &kp H                   &hm RIGHT_SHIFT N  &hm LEFT_ALT E       &kp I    &lt 4 O
 &hm LS(LA(LC(LEFT_GUI))) Z  &kp X        &hm LA(LCTRL) C  &hm LCTRL V       &hm LS(LCTRL) B        &hm LS(LCTRL) K         &hm LCTRL M        &hm LA(LCTRL) COMMA  &kp DOT  &hm LS(LA(LC(LEFT_GUI))) SLASH
                                                           &lt 1 SPACE       &hm LEFT_GUI ESCAPE    &hm LEFT_GUI BACKSPACE  &lt 2 ENTER
