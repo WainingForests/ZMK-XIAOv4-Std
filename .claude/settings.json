@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(echo \"=== west.yml revision ===\"; git show HEAD:config/west.yml | Select-String -Pattern \"revision|name:\"; echo \"=== left.conf \\(should be empty\\) ===\"; $c = git show HEAD:boards/shields/skreecustom/skreecustom_left.conf; if \\([string]::IsNullOrWhiteSpace\\($c\\)\\) { echo \"\\(empty - EC11 removed\\)\" } else { $c }; echo \"=== keymap present? ===\"; git log --oneline -1 -- config/skreecustom.keymap)",
+      "PowerShell(git push origin \"NS-45x6+4-TBx2-\\(56\\)\" 2>&1)",
+      "PowerShell(try { $j = Get-Content \"config\\\\info.json\" -Raw | ConvertFrom-Json; echo \"VALID JSON\"; echo \"top-level keys: $\\($j.PSObject.Properties.Name -join ', '\\)\" } catch { echo \"INVALID: $\\($_.Exception.Message\\)\" })"
+    ]
+  }
+}
