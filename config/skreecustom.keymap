@@ -23,7 +23,7 @@
                    &kp LEFT  &kp RIGHT                                            &kp UP     &kp DOWN
                              &kp LSHFT  &kp SPACE  &kp BSPC    &kp DEL  &kp RET   &kp RGUI
                                         &kp LCTRL  &mo 1       &mo 2    &kp LALT
-            >;
+            >; 
         };
 
         layer_1 {
