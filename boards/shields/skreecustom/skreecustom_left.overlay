@@ -16,3 +16,8 @@
 &spi1 {
   status = "disabled";
 };
+
+// No trackball on the left half
+&trackball_split {
+  status = "disabled";
+};
