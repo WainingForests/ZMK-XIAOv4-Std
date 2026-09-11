@@ -73,7 +73,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)		    RC(3,6) RC(3,7) RC(3,8) RC(
         status = "disabled";
         device = <&trackball_split>;
 	input-processors =
-	<&zip_xy_transform 0>,
+	<&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
 	<&zip_xy_scaler 3 4>;
     };
 };
