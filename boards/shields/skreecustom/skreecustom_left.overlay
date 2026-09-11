@@ -14,13 +14,5 @@
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 &spi1 {
-  status = "okay";
-};
-
-&trackball_split2 {
-	device = <&trackball2>;
-};
-
-&trackball_split {
-	status = "disabled";
+  status = "disabled";
 };

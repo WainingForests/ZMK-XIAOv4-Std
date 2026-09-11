@@ -16,10 +16,16 @@ config ZMK_RGB_UNDERGLOW_EXT_POWER
     default n
 
 config ZMK_KSCAN_MATRIX_WAIT_BEFORE_INPUTS
-    default 200
+    default 100
 
 config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
-    default 50
+    default 25
+
+config ZMK_KSCAN_DEBOUNCE_PRESS_MS
+    default 8
+
+config ZMK_KSCAN_DEBOUNCE_RELEASE_MS
+    default 8
 
 endif
 
@@ -57,6 +63,12 @@ config ZMK_KSCAN_MATRIX_WAIT_BEFORE_INPUTS
 
 config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
     default 1
+
+config ZMK_KSCAN_DEBOUNCE_PRESS_MS
+    default 8
+
+config ZMK_KSCAN_DEBOUNCE_RELEASE_MS
+    default 8
 
 
 endif
