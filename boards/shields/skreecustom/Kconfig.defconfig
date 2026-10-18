@@ -1,31 +1,10 @@
-if SHIELD_SKREECUSTOM_DONGLE
+if SHIELD_SKREECUSTOM_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "Skree Custom"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
-
-config ZMK_SPLIT
-    default y
-
-config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-    default 2
-
-config ZMK_RGB_UNDERGLOW_EXT_POWER
-    default n
-
-config ZMK_KSCAN_MATRIX_WAIT_BEFORE_INPUTS
-    default 100
-
-config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
-    default 25
-
-config ZMK_KSCAN_DEBOUNCE_PRESS_MS
-    default 8
-
-config ZMK_KSCAN_DEBOUNCE_RELEASE_MS
-    default 8
 
 endif
 
@@ -40,20 +19,12 @@ config ZMK_SLEEP
 config ZMK_POINTING
     default y
 
-config ZMK_POINTING_SMOOTH_SCROLLING
-    default n
-
 config SPI
     default y
 
-config PMW3610
+config ZMK_RGB_UNDERGLOW
     default y
-
-config PMW3610_SWAP_XY
-    default n
-
-config PMW3610_REPORT_INTERVAL_MIN
-    default 8
+    imply WS2812_STRIP
 
 config ZMK_RGB_UNDERGLOW_EXT_POWER
     default n
@@ -64,15 +35,5 @@ config ZMK_KSCAN_MATRIX_WAIT_BEFORE_INPUTS
 config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
     default 1
 
-config ZMK_KSCAN_DEBOUNCE_PRESS_MS
-    default 8
-
-config ZMK_KSCAN_DEBOUNCE_RELEASE_MS
-    default 8
-
 
 endif
-
-config ZMK_RGB_UNDERGLOW
-    default y
-    imply WS2812_STRIP
